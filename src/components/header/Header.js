@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductContext from "../../store/ProductContext";
 import classes from "./header.module.css";
+// import logo from "../../images/eLogo.png";
 
 export default function Header(props) {
   const [hamOpen, setHamOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Header(props) {
         <nav>
           <div className={classes.logo}>
             <Link className={classes.link} to="/ecommerce">
-              Logo
+              Shop
             </Link>
           </div>
           <ul className={classes.desk}>

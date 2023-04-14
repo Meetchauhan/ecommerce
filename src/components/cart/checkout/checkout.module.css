@@ -1,0 +1,46 @@
+.checkOut {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.total {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+button{
+    padding: 10px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: all .5s;
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+@media(max-width:1199px){
+    .checkOut {
+        padding: 40px 50px;
+      }
+}
+@media(max-width:991px){
+    .checkOut {
+        padding: 35px 40px;
+      }
+}

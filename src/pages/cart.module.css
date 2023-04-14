@@ -1,0 +1,24 @@
+.cartSec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+.cartInner{
+    width: 70%;
+}
+@media(max-width:991px){
+    .cartInner{
+        width: 65%;
+    }
+}
+@media(max-width:767px){
+    .cartSec{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .cartInner{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

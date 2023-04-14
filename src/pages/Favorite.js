@@ -9,7 +9,7 @@ export default function Favorite() {
   let content;
 
   if (productCtx.totalFavoriteProduct === 0) {
-    content = <p>There is no item in Favorites </p>;
+    content = <h1>There is no item in Favorites </h1>;
   } else {
     console.log(productCtx.favoriteProducts);
     content = productCtx.favoriteProducts.map((favItem) => {
