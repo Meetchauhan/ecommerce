@@ -12,7 +12,7 @@ function App() {
       <Layout>
         <div className="container">
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="ecommerce" exact element={<Home />} />
             <Route path="favorite" element={<Favorite />} />
             <Route path="cart" element={<Cart />} />
             <Route path="product" element={<Product />} />

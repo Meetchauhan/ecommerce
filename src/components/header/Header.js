@@ -17,7 +17,7 @@ export default function Header(props) {
       <div className={classes.container}>
         <nav>
           <div className={classes.logo}>
-            <Link className={classes.link} to="/">
+            <Link className={classes.link} to="/ecommerce">
               Logo
             </Link>
           </div>
