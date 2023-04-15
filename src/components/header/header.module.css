@@ -27,14 +27,14 @@ li {
   color: white;
   font-size: 30px;
   letter-spacing: 2px;
-  font-family: monospace;
+  font-family: math;
 }
 
 sup {
   background-color: lightgray;
-  padding: 3px 8px;
+  padding: 0 5px;
   border-radius: 100%;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   font-weight: 600;
 }
@@ -88,7 +88,7 @@ ul.mobile {
   ul.show {
     display: block;
     position: absolute;
-    top: 139%;
+    top: 145%;
     left: -20px;
     background-color: #151213e0;
     height: 100vh;
@@ -106,7 +106,7 @@ ul.mobile {
   .link {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 2px;
   }
   .hamburger {

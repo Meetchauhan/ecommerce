@@ -52,7 +52,7 @@ export default function ProductItem(props) {
               <span>
                 <span>&#8377;</span>
               </span>
-              {Math.ceil(props.price)}
+              {(Math.ceil(props.price) * 81).toLocaleString('en-IN')}
             </div>
             <img
               src={productIsFavorite ? favorite : notFavorite}
