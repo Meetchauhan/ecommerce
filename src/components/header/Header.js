@@ -6,6 +6,7 @@ import classes from "./header.module.css";
 
 export default function Header(props) {
   const [hamOpen, setHamOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
   const favoriteCtx = useContext(ProductContext);
   let favCount = favoriteCtx.favoriteProducts.length;
   let cartCount = favoriteCtx.cartProducts.length;
@@ -13,8 +14,18 @@ export default function Header(props) {
   function toggle() {
     setHamOpen(!hamOpen);
   }
+
+  function handleSticky() {
+    if (window.scrollY > 75) {
+      setSticky(true);
+    } else {
+      setSticky(false)
+    }
+    console.log(window.scrollY);
+  }
+  window.addEventListener("scroll", handleSticky);
   return (
-    <header>
+    <header className={sticky && classes.sticky}>
       <div className={classes.container}>
         <nav>
           <div className={classes.logo}>

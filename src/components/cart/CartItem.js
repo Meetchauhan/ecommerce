@@ -20,6 +20,7 @@ export default function CartItem(props) {
   function handleMouseLeave() {
     setRemove(false);
   }
+
   return (
     <div className={classes.cart}>
       <div className={classes.cartInner}>
@@ -27,10 +28,15 @@ export default function CartItem(props) {
         <div className={classes.title}>{props.title}</div>
         <div className={classes.price}>
           <span>&#8377;</span>
-          { (Math.ceil(props.price) * 81).toLocaleString('en-IN')}
+          {(Math.ceil(props.price) * 81).toLocaleString("en-IN")}
         </div>
-        <div className={classes.removeIcon} onClick={handleRemoveFromCart} onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
-           <img src={remove ? removeRed : notRemoved} alt="removeIcon" />
+        <div
+          className={classes.removeIcon}
+          onClick={handleRemoveFromCart}
+          onMouseOver={handleMouseOver}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={remove ? removeRed : notRemoved} alt="removeIcon" />
         </div>
       </div>
     </div>

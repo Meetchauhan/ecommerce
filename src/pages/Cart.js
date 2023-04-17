@@ -6,7 +6,6 @@ import CheckOut from "../components/cart/checkout/CheckOut";
 export default function Cart() {
   const productCtx = useContext(ProductContext);
   let content;
-
   if (productCtx.totalCartProduct === 0) {
     content = <h1>Cart is Empty</h1>;
   } else {
